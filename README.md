@@ -1,5 +1,3 @@
----
-
 # 🎮 Cyberpunk-Themed Tic Tac Toe Game
 
 Welcome to my **Tic Tac Toe** game — a stylish cyberpunk-themed implementation of the classic game! Built with HTML, CSS, and JavaScript, this game includes support for dark/light mode toggling and smooth animations to enhance your gaming experience.
