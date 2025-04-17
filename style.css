@@ -14,7 +14,7 @@
 
     --TITLE-FS: clamp(3rem, 13vw, 4.5rem);
     --TURN-MSG-FS: clamp(1.5rem, 10vw, 2.5rem);
-    --PLAYER-SYMBOL-FS: clamp(5rem, 20vw, 9rem);
+    --PLAYER-SYMBOL-FS: clamp(2rem, 15vw, 6rem);
     --FOOTER-FS: clamp(1rem, 5vw, 1.2rem);
     --RESULT-DIALOG-FS: clamp(1.2rem, 8vw, 2.3rem);
 
@@ -229,11 +229,4 @@ footer {
     color: black;
     font-size: var(--FOOTER-FS);
     user-select: text;
-}
-.no-screenshot {
-    position: fixed;
-    inset: 0;
-    background-color: rgba(0,0,0,0.6);
-    z-index: 9999;
-    pointer-events: none;
 }

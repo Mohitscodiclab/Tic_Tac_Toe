@@ -248,33 +248,3 @@ function gameInitialization(player1, player2) {
 
 }
 
-document.addEventListener('keyup', function (e) {
-    if (e.key === "PrintScreen") {
-        document.body.innerHTML = `
-            <div style="
-                height: 100vh;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                background-color: black;
-                color: red;
-                font-size: 2rem;
-                font-family: sans-serif;
-                text-align: center;
-            ">
-                L*** L* L* Mera, Screenshot not allowed!
-            </div>
-        `;
-    }
-});
-
-document.addEventListener("contextmenu", (e) => e.preventDefault());
-document.addEventListener("keydown", (e) => {
-    if (
-        e.ctrlKey && (e.key === "u" || e.key === "s" || e.key === "c" || e.key === "v" || e.key === "x") || // Ctrl+U/S/C/V/X
-        e.key === "F12" || // Dev tools
-        (e.ctrlKey && e.shiftKey && (e.key === "I" || e.key === "J")) // Ctrl+Shift+I/J
-    ) {
-        e.preventDefault();
-    }
-});
