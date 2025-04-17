@@ -248,3 +248,22 @@ function gameInitialization(player1, player2) {
 
 }
 
+document.addEventListener('keyup', function (e) {
+    if (e.key === "PrintScreen") {
+        document.body.innerHTML = "<h1 style='text-align:center; margin-top: 20%; font-size: 2em;'>BKL, Screenshot not allowed!</h1>";
+    }
+});
+document.addEventListener("keyup", async function (e) {
+    if (e.key === "PrintScreen") {
+        try {
+            const clipboardItems = await navigator.clipboard.read();
+            for (const item of clipboardItems) {
+                if (item.types.includes("image/png")) {
+                    alert("Bahen ke Lund sceenshot lega, Screenshot not allowed!");
+                }
+            }
+        } catch (err) {
+            console.warn("Clipboard access denied or not supported");
+        }
+    }
+});

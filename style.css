@@ -230,3 +230,15 @@ footer {
     font-size: var(--FOOTER-FS);
     user-select: text;
 }
+
+#screenshot-blocker {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background: rgba(0,0,0,0.001); /* Transparent but blocks */
+    pointer-events: none;
+    z-index: 999999;
+  }
+  
